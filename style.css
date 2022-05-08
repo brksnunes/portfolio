@@ -1,0 +1,31 @@
+p, h3{
+color: #ebdbb2;
+font-weight: 400;
+margin-left: 20px;
+}
+li{
+list-style-type: none;
+color:#ebdbb2;
+}
+body{
+background-color: #1d2021;
+font-family: 'Source Code Pro', monospace;
+margin: 0px;
+padding: 0px;
+}
+.main-line{
+color: #cc241d;
+font-weight: 700;
+}
+.list{
+    position: absolute;
+    left: 380px;
+    top: 50px;
+    float: right;
+
+}
+.picture{
+    position: absolute;
+    margin-left: 20px;
+    width: 100px;
+}

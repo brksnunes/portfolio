@@ -1,6 +1,82 @@
-#sidebar{
+:root {
+  --box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  --backdrop-filter: blur(3px);
+  --font-color: white;
+  --main-bg-color: rgba(44, 44, 46, 0.6);
+  --sidebar-bg-color: rgba(28, 28, 30, 0.7);
+}
+html,
+body {
+  all: unset;
+  background-image: url("/assets/bg2.jpg");
+  background-repeat: no-repeat;
+  font-family: "Work Sans", sans-serif;
+  color: var(--font-color);
+}
+ul{
+  list-style: none;
+}
+i{
+  font-size: 1.4rem;
+}
+#grid-container {
+  display: grid;
+  grid-template-columns: 25vw 75vw;
+  grid-template-rows: 50vh 50vh;
+  grid-template-areas: "sidebar main";
+}
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  grid-area: sidebar;
+  grid-row: 1/3;
+  background-color: var(--sidebar-bg-color);
+  box-shadow: var(--box-shadow);
+  -webkit-backdrop-filter: var(--backdrop-filter);
+  backdrop-filter: var(--backdrop-filter);
+  max-width: 30vw;
+  padding: 0 3vw;
+}
+#profile-links{
+  line-height: 30px;
+  text-align: center;
+}
+#profile-links > a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+#profile-header > h2{
+  font-size: 1.2rem;
+  text-align: center;
+}
+#profile-header > h3{
+  font-size: 1rem;
+  font-weight: 200;
+  text-align: center;
+}
+#main-body {
+  grid-area: main;
+  grid-row: 1/3;
+  max-width: 70vw;
+
+  padding: 0 3vw;
+}
+@media screen and (max-width: 600px) {
+  #grid-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: space-around;
+  }
+  #sidebar {
+    background-color: bisque;
+    max-width: 100%;
+    padding: 0 5vw;
+  }
+  #main-body {
+    max-width: 100%;
+    background-color: red;
+    padding: 0 3vw;
+  }
 }

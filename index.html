@@ -1,98 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rodrigo|Portfolio
-        </title>
-        <link rel="stylesheet" href="style.css"/>
-        <!--load all Font Awesome styles -->
-        <link href="assets/fontawesome/css/all.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <section>
-            <h3>
-                <span class="main-line aqua-fg">[rodrigo@dev]~</span>
-                <strong>user info_</strong>
-            </h3>
-            <div class="fetch">
-                <div>
-                    <img class="picture" src="assets/images/eu.jpg" alt="Imagem de um homem extremamente bonito =)">
-                </div>
-                <div class="list">
-                    <ul>
-                        <li>
-                            <p>
-                                <i class="fa-solid fa-user aqua-fg"></i>
-                                <span class="main-line aqua-fg">Nome :</span>
-                                Rodrigo Nunes da Silva
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <i class="fa-solid fa-cake-candles aqua-fg"></i>
-                                <span class="main-line aqua-fg">Idade:</span>
-                                25 anos
-                            </p>
-                        </li>
-                        <li>
-                            <p class="main-about">
-                                <i class="fa-solid fa-comment aqua-fg"></i>
-                                <span class="main-line aqua-fg">Sobre:</span>
-                                Formado em Análise e Desenvolvimento de Sistemas pela Universidade de Mogi das Cruzes e estudante de Desenvolvimento Web na Trybe. Apaixonado por tudo relacionado à tecnologia, desde hardware até software. Como hobby, possuo experiência básica em sistema de conteinerização Docker, Ubuntu Server, experiência intermediária/avançada em sistemas Linux (Debian based, Fedora, Arch), experiência básica em redes cabeadas e wireless, impressão 3D.
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a class="button blue-bg" href="#skills" target="_blank"><i class="fa-solid fa-code"></i> Skills</a>
-                                <a class="button green-bg" href="#social" target="_blank"><i class="fa-solid fa-users"></i> Social</a>
-                                <a class="button purple-bg" href="#link-list" target="_blank"><i class="fa-solid fa-link"></i> Links</a>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <h3>
-                <span class="main-line aqua-fg">[rodrigo@dev]~</span>
-                <strong>ls --skills_</strong>
-            </h3>
-            <div id="skills">
-                <ul>
-                    <li><i class="fa-brands fa-linux fs-li"></i> Bash</li>
-                    <li><i class="fa-brands fa-git-square red-fg fs-li"></i><strong> Git</strong></li>
-                    <li><i class="fa-brands fa-github-square fs-li"></i> Github</li>
-                </ul>
-                <ul class="skill-list">
-                    <li><i class="fa-brands fa-html5 aqua-fg fs-li"></i> HTML</li>
-                    <li><i class="fa-brands fa-css3 orange-fg fs-li"></i></i> CSS</li>
-                    <li><i class="fa-brands fa-js-square yellow-fg fs-li"></i> Javascript</li>
-                </ul>
-            </div>
-            <h3>
-                <span class="main-line aqua-fg">[rodrigo@dev]~</span>
-                <strong>ls --social_</strong>
-                <div id="social" class="social-list">
-                        <a class="button black-bg" href="https://github.com/brksnunes" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-                        <a class="button purple-bg" href="https://instagram.com/brksnunes" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-                        <a class="button blue-bg" href="https://www.linkedin.com/in/rodrigo-nunes-da-silva" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-                </div>
-            </h3>
-            <h3 style="position: absolute !important; top: 630px;">
-                <span class="main-line aqua-fg">[rodrigo@dev]~</span>
-                <strong>ls --links_</strong>
-            </h3>
-            <div id="link-list" class="link-list">
-                <ul>
-                    <li><a class="link-item" href="https://hackaday.io/" target="_blank"><i class="fa-solid fa-caret-right"></i> Hackaday.io</a></li>
-                    <li><a class="link-item" href="https://dev.to/" target="_blank"><i class="fa-solid fa-caret-right"></i> Dev.to</a></li>
-                    <li><a class="link-item" href="https://n-o-d-e.net/" target="_blank"><i class="fa-solid fa-caret-right"></i> n-o-d-e</a></li>
-                    <li><a class="link-item" href="https://www.freecodecamp.org/" target="_blank"><i class="fa-solid fa-caret-right"></i> freeCodeCamp</a></li>
-                </ul>
-            </div>
-        </section>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rodrigo | Portfolio</title>
+  </head>
+  <body>
+    <aside id="sidebar">
+      <section id="profile">
+        <div id="profile-container">
+          <div id="profile-header">
+            <h2>Rodrigo Nunes da Silva</h2>
+            <h3>Web Developer</h3>
+          </div>
+          <div id="profile-links">
+            <ul>
+              <li>Igaratá</li>
+              <li>Trybe</li>
+              <li>Github</li>
+              <li>Linkedin</li>
+              <li>Email</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="tech">
+        <h3>Technologies</h3>
+        <div id="tech-container">
+          <div id="button-grid">
+
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <div id="experience-container">
+          <h3>Experiences</h3>
+          <div id="xp-list">
+
+          </div>
+        </div>
+      </section>
+      <section id="education">
+        <div id="edu-container">
+          <h3>Education</h3>
+          <div id="edu-list">
+
+          </div>
+        </div>
+      </section>
+    </aside>
+    <section id="main-body">
+      <section id="about-me-container">
+        <div id="about-me">
+          <h3>About Me</h3>
+        </div>
+      </section>
+      <section id="projects-container">
+        <div id="projects">
+          <h3>My Projects</h3>
+        </div>
+      </section>
+    </section>
+    <footer id="footer"></footer>
+  </body>
 </html>

@@ -2,23 +2,39 @@
   --box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   --backdrop-filter: blur(3px);
   --font-color: white;
-  --main-bg-color: rgba(44, 44, 46, 0.6);
-  --sidebar-bg-color: rgba(28, 28, 30, 0.7);
-  --sidebar-bg-color2: rgba(20, 30, 30, 0.9);
+  --main-bg-color: rgba(44, 44, 46, 0.2);
+  --sidebar-bg-color: rgba(28, 28, 30, 0.6);
+  --sidebar-bg-color2: rgba(20, 30, 30, 0.4);
 }
 html,
 body {
   all: unset;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite; */
   background-image: url("/assets/bg2.jpg");
-  background-repeat: no-repeat;
   font-family: "Work Sans", sans-serif;
   color: var(--font-color);
 }
+/* @keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+} */
 ul {
   list-style: none;
 }
 i {
   font-size: 1.4rem;
+}
+p{
+  text-align: justify;
 }
 #grid-container {
   display: grid;
@@ -39,9 +55,10 @@ i {
   max-width: 30vw;
   padding: 0 2vw;
 }
-#profile-links {
+#profile-links, #tech, #experience, #education {
   line-height: 30px;
   background-color: var(--sidebar-bg-color2);
+  margin-bottom: 2vh;
   padding: 0 1rem;
   border-radius: 16px;
 }
@@ -56,6 +73,7 @@ i {
 #profile-links > p {
   text-align: center;
 }
+
 #profile-header > h2 {
   font-size: 1.2rem;
   text-align: center;
@@ -93,13 +111,14 @@ i {
     flex-direction: column;
   }
   #sidebar {
-    background-color: bisque;
+    box-shadow: unset;
+    background-color: rgba(255, 255, 255, 0);
     max-width: 100%;
     padding: 0 5vw;
   }
   #main-body {
     max-width: 100%;
-    background-color: red;
+  
     padding: 0 3vw;
   }
 }

@@ -18,96 +18,104 @@
     <title>Rodrigo | Portfolio</title>
   </head>
   <body>
-    <div id="grid-container">
-      <aside id="sidebar">
-        <section id="profile">
-          <div id="profile-container">
-            <div id="profile-header">
-              <h2>Rodrigo Nunes da Silva</h2>
-              <h3>Web Developer</h3>
+    <div class="grid-container">
+      <aside class="profile">
+        <div class="profile__header">
+          <div class="profile__pic">
+            <img src="./assets/eu.jpg" alt="" />
+          </div>
+          <div class="profile__name">
+            <h2>Rodrigo Nunes da Silva</h2>
+            <h3>Web Development Student</h3>
+          </div>
+        </div>
+        <div class="profile__links">
+          <a target="_blank" rel="noopener" href="https://github.com/brksnunes">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a target="_blank" rel="noopener" href="https://github.com/brksnunes">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a target="_blank" rel="noopener" href="https://github.com/brksnunes">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a target="_blank" rel="noopener" href="https://github.com/brksnunes">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+
+        <div class="technologies">
+          <h4 class="-title">Skills</h4>
+          <div class="technologies__grid">
+            <div class="-round-border">
+              <span>HTML</span>
             </div>
-            <div id="profile-links">
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://github.com/brksnunes"
-              >
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Igaratá</p>
-              </a>
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://github.com/brksnunes"
-              >
-                <i class="fa-solid fa-chalkboard-user"></i>
-                <p>Trybe</p>
-              </a>
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://github.com/brksnunes"
-              >
-                <i class="fa-brands fa-github"></i>
-                <p>brksnunes</p>
-              </a>
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://github.com/brksnunes"
-              >
-                <i class="fa-brands fa-linkedin-in"></i>
-                <p>brksnunes</p>
-              </a>
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://github.com/brksnunes"
-              >
-                <i class="fa-solid fa-envelope"></i>
-                <p>brksnunes@proton.me</p>
-              </a>
+            <div class="-round-border">
+              <span>CSS</span>
+            </div>
+            <div class="-round-border">
+              <span>Javascript</span>
+            </div>
+            <div class="-round-border">
+              <span>Linux</span>
+            </div>
+            <div class="-round-border">
+              <span>Git</span>
+            </div>
+            <div class="-round-border">
+              <span>Github</span>
             </div>
           </div>
-        </section>
-        <section id="tech">
-          <h3>Technologies</h3>
-          <div id="tech-container">
-            <div id="button-grid"></div>
-          </div>
-        </section>
-        <section id="experience">
-          <div id="experience-container">
-            <h3>Experiences</h3>
-            <div id="xp-list"></div>
-          </div>
-        </section>
-        <section id="education">
-          <div id="edu-container">
-            <h3>Education</h3>
-            <div id="edu-list"></div>
-          </div>
-        </section>
+        </div>
+        <!--
+        <div id="experience-container">
+          <h3>Experiences</h3>
+          <div id="xp-list"></div>
+        </div>
+
+        <div id="edu-container">
+          <h3>Education</h3>
+          <div id="edu-list"></div>
+        </div> -->
       </aside>
-      
-      <section id="main-body">
+
+      <section class="main-section">
         <section id="about-me-container">
           <div id="about-me">
-            <h3>About Me</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod libero qui, eos rerum natus voluptates odio aspernatur aliquid nemo quae sit eius doloribus. Non modi, officiis nam amet reiciendis exercitationem!
-            Optio, eligendi possimus exercitationem, aspernatur libero vitae cumque asperiores laborum, dolor facere a doloribus voluptatem eaque. Ut commodi soluta minima minus sapiente, fuga illum at fugit veritatis inventore culpa est?
-            Laboriosam facilis officia praesentium eveniet. Consequatur repellendus expedita voluptate aut ex ullam mollitia deserunt sint voluptatem, dignissimos necessitatibus quidem fuga a voluptas minima neque veniam, modi voluptatum asperiores doloremque sit!
-            Et esse error quas iusto vitae asperiores illo fugit iste. Accusantium, dicta vero voluptas consectetur pariatur quis praesentium sequi molestias expedita. Voluptatum deleniti veritatis nam saepe, dolore culpa mollitia maiores!
-            Blanditiis sunt dignissimos esse itaque libero a ullam unde, rem corrupti error numquam vero laboriosam enim quaerat perspiciatis quis corporis magnam! Animi culpa possimus impedit eius iste unde dolor veritatis.</p>
+            <h3 class="-title">About Me</h3>
+            <p class="-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+              libero qui, eos rerum natus voluptates odio aspernatur aliquid
+              nemo quae sit eius doloribus. Non modi, officiis nam amet
+              reiciendis exercitationem! Optio, eligendi possimus
+              exercitationem, aspernatur libero vitae cumque asperiores laborum,
+              dolor facere a doloribus voluptatem eaque. Ut commodi soluta
+              minima minus sapiente, fuga illum at fugit veritatis inventore
+              culpa est? Laboriosam facilis officia praesentium eveniet.
+              Consequatur repellendus expedita voluptate aut ex ullam mollitia
+              deserunt sint voluptatem, dignissimos necessitatibus quidem fuga a
+              voluptas minima neque veniam, modi voluptatum asperiores
+              doloremque sit! Et esse error quas iusto vitae asperiores illo
+              fugit iste. Accusantium, dicta vero voluptas consectetur pariatur
+              quis praesentium sequi molestias expedita. Voluptatum deleniti
+              veritatis nam saepe, dolore culpa mollitia maiores! Blanditiis
+              sunt dignissimos esse itaque libero a ullam unde, rem corrupti
+              error numquam vero laboriosam enim quaerat perspiciatis quis
+              corporis magnam! Animi culpa possimus impedit eius iste unde dolor
+              veritatis.
+            </p>
           </div>
         </section>
         <section id="projects-container">
           <div id="projects">
-            <h3>My Projects</h3>
+            <h3 class="-title">My Projects</h3>
           </div>
         </section>
       </section>
-      <footer id="footer"></footer>
+      <!-- <footer id="footer"></footer> -->
     </div>
   </body>
 </html>

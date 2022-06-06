@@ -16,7 +16,7 @@
   --hover-menu-bg: rgba(255, 255, 255, 0);
   --content-title-color: #999ba5;
   --content-bg: rgb(146 151 179 / 13%);
-  --button-inactive: rgb(249 250 251 / 55%);
+  --button-inactive: rgba(75, 76, 77, 0.082);
   --dropdown-bg: #21242d;
   --dropdown-hover: rgb(42 46 60);
   --popup-bg: rgb(22 25 37);
@@ -38,10 +38,12 @@ body {
 
 i {
   font-size: 1.4rem;
-  border: 2px solid white;
+  border: 1px solid var(--main-bg-color);
   border-radius: 100%;
   padding: 10px;
-  color: white;
+  background-color: var(--button-inactive);
+  -webkit-backdrop-filter: var(--backdrop-filter);
+  backdrop-filter: var(--backdrop-filter);
 }
 
 h2 {
@@ -57,7 +59,7 @@ h3 {
 .-title {
   text-transform: uppercase;
   color: var(--title-color);
-  padding: 5px 25px;
+  padding-left: 25px;
 }
 
 .-justify {
@@ -67,6 +69,7 @@ h3 {
 .-round-border {
   border: 1px solid white;
   padding: 5px;
+  margin: 6px;
   width: fit-content;
   height: fit-content;
   border-radius: 10px;
@@ -85,6 +88,7 @@ h3 {
   grid-area: sidebar;
   grid-row: 1/3;
   height: 95vh;
+  max-height: 100%;
   border-radius: 20px;
   background-color: var(--theme-bg-color);
   -webkit-backdrop-filter: var(--backdrop-filter);
@@ -94,7 +98,7 @@ h3 {
 .profile__header {
   display: flex;
   flex-direction: column;
-  padding: 2vw;
+  padding-top: 2vw;
 }
 
 .profile__name {
@@ -119,7 +123,6 @@ h3 {
   margin: 0 auto;
   padding-bottom: 15px;
   justify-items: center;
-  
 }
 
 .profile__links > a {
@@ -132,6 +135,7 @@ h3 {
 
 .technologies {
   flex-grow: 1;
+  height: 100%;
   background-color: var(--theme-bg-color);
   border-radius: 0 0 20px 20px;
 }
@@ -139,14 +143,15 @@ h3 {
 .technologies__grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: 2vh;
+  padding: 0 25px;
 }
 
 .technologies__grid > a {
   flex-grow: 1;
   width: 50%;
-  padding-bottom: 1rem;
+  padding: 1vw;
   text-align: center;
   text-decoration: none;
   color: inherit;

@@ -229,12 +229,6 @@ h4{
 .card__button:hover{
   background-color: #0649f1;
 }
-@media screen and (max-width: 768px){
-  .grid-container {
-
-  }
-
-}
 @media screen and (max-width: 600px) {
   .grid-container {
     display: flex;
@@ -251,5 +245,18 @@ h4{
     height: auto;
     padding: 0 3vw;
     margin-top: 3vh;
+  }
+  .card__footer{
+    padding: 15px;
+  }
+  .card {
+    outline: 1px solid var(--border-color-1);
+    background-color: var(--main-bg-color);
+    flex-grow: 1;
+    border-radius: 16px;
+    padding: 1vw 2vw 0 2vw;
+    margin-bottom: 10px;
+    transition-property: background-color;
+    transition-duration: .25s;
   }
 }

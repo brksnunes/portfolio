@@ -6,30 +6,16 @@
   --main-bg-color: rgba(7, 8, 12, 0.4);
   --sidebar-bg-color: rgba(28, 28, 30, 0.6);
   --sidebar-bg-color2: rgba(20, 30, 30, 0.4);
-  /*  */
   --theme-bg-color: rgba(7, 8, 12, 0.5);
-  --border-color: rgba(113 119 144 / 25%);
-
-  --theme-color: #f9fafb;
-  --inactive-color: rgb(113 119 144 / 78%);
-  --body-font: "Poppins", sans-serif;
-  --hover-menu-bg: rgba(255, 255, 255, 0);
-  --content-title-color: #999ba5;
-  --content-bg: rgb(146 151 179 / 13%);
-  --button-inactive: rgba(75, 76, 77, 0.082);
-  --dropdown-bg: #21242d;
-  --dropdown-hover: rgb(42 46 60);
-  --popup-bg: rgb(22 25 37);
-  --search-bg: #14162b;
-  --overlay-bg: rgba(36, 39, 59, 0.3);
-  --scrollbar-bg: rgb(1 2 3 / 40%);
+  --border-color-1: rgba(7, 8, 12, 0.705);
+  --border-color-2: rgba(77, 77, 78, 0.781);
 }
 html,
 body {
   all: unset;
   height: 100%;
   box-sizing: border-box;
-  background-image: url(https://wallpapershome.com/images/wallpapers/macos-big-sur-1280x720-dark-wwdc-2020-22655.jpg);
+  background-image: url("./assets/bg6.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,14 +30,19 @@ h2 {
 }
 
 h3 {
-  font-weight: 300;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+h4{
+  font-weight: bolder;
+  margin: 10px;
 }
 
 .-title {
   text-transform: uppercase;
   color: var(--title-color);
   padding-left: 25px;
+  flex-grow: 1;
 }
 
 .-justify {
@@ -69,7 +60,7 @@ h3 {
 .grid-container {
   display: grid;
   grid-template-columns: 25% fit-content(80%);
-  grid-template-rows: 50vh minmax(95vh, fit-content);;
+  grid-template-rows: 50vh minmax(95vh, fit-content);
   grid-template-areas: "sidebar main";
   justify-content: center;
   padding: 1rem;
@@ -190,12 +181,57 @@ h3 {
   -webkit-backdrop-filter: var(--backdrop-filter);
   backdrop-filter: var(--backdrop-filter);
 }
+
+.about-me a {
+  color: white;
+  font-weight: 600;
+}
+
+.card__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2vw;
+  margin: 0 auto;
+}
+.card {
+  outline: 1px solid var(--border-color-1);
+  background-color: var(--main-bg-color);
+  flex-grow: 1;
+  border-radius: 16px;
+  padding: 1vw 1vw 0 1vw;
+  transition-property: background-color;
+  transition-duration: .25s;
+}
+.card:hover{
+  background-color: var(--border-color-1);
+}
+.card__body{
+  border-bottom: 1px solid var(--border-color-2);
+}
+.card__footer{
+  display: flex;
+  justify-content: end;
+  gap: 1vw;
+  padding: 1vw;
+}
+.card__button {
+  padding: 5px;
+  border-radius: 16px;
+  border: none;
+  width: 70px;
+  color: white;
+  background-color: #3a6df0;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: .25s;
+}
+.card__button:hover{
+  background-color: #0649f1;
+}
 @media screen and (max-width: 768px){
   .grid-container {
-    display: grid;
-    grid-template-columns: fit-content(40vw) fit-content(60vw);
-    grid-template-rows: 50vh minmax(95vh, fit-content);;
-    grid-template-areas: "sidebar main";
+
   }
 
 }

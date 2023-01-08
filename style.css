@@ -95,6 +95,8 @@ h4{
   display: flex;
   flex-wrap: wrap;
   width: 90%;
+  height: 90%;
+  margin: 0 auto;
   /* grid-template-columns: 25% 80%;
   grid-template-areas: "sidebar main"; */
   border-radius: var(--border-radius);

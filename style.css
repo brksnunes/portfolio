@@ -94,18 +94,13 @@ h4{
 
  .main-container {
   display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
  }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px;
-  height: 80vh;
-  /* grid-template-columns: 25% 80%;
-  grid-template-areas: "sidebar main"; */
+  margin: 30px;
   border-radius: var(--border-radius);
   background-color: var(--main-bg-color);
   -webkit-backdrop-filter: var(--backdrop-filter);
@@ -115,7 +110,6 @@ h4{
 .profile {
   display: flex;
   flex-direction: column;
-  /* grid-area: sidebar; */
   padding: 30px;
   flex: 1;
 }
@@ -177,10 +171,23 @@ h4{
 
 .main-section {
   /* grid-area: main; */
-  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 20px;
   flex-grow: 3;
   border-radius: 20px;
   flex: 4;
+}
+
+.about-me-container {
+
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
 }
 
 .about-me a {
@@ -188,11 +195,18 @@ h4{
   font-weight: 600;
 }
 
-.card__container{
+.card_container-1{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 2vw;
+  gap: 1vw;
+}
+
+.card_container-2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1vw;
 }
 .card {
   outline: 1px solid var(--border-color-1);

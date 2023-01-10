@@ -135,7 +135,7 @@ h4{
 .container {
   display: flex;
   flex-wrap: wrap;
-  margin: 60px;
+  margin: calc(100% - 96vw);
   border-radius: var(--border-radius);
   background-color: var(--main-bg-color);
   -webkit-backdrop-filter: var(--backdrop-filter);
@@ -263,7 +263,7 @@ h4{
   background-color: #0649f1;
 }
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 700px) {
   .grid-container {
     display: flex;
     flex-direction: column;
